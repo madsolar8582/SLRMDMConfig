@@ -26,7 +26,7 @@
 /* Begin PBXFileReference section */
 		7A52EBCE2703C5FD00E15BBB /* SLRMDMConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLRMDMConfig.h; sourceTree = "<group>"; };
 		7A52EBCF2703C5FD00E15BBB /* SLRMDMConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLRMDMConfig.m; sourceTree = "<group>"; };
-		7A58873827052FB30066428E /* SLRMDMConfig.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = file; path = SLRMDMConfig.xctestplan; sourceTree = SOURCE_ROOT; };
+		7A58873827052FB30066428E /* SLRMDMConfig.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = SLRMDMConfig.xctestplan; sourceTree = SOURCE_ROOT; };
 		7AD26AAA2703C5C500820637 /* SLRMDMConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SLRMDMConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD26AB22703C5C500820637 /* SLRMDMConfigTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLRMDMConfigTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD26AB72703C5C500820637 /* SLRMDMConfigTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLRMDMConfigTests.m; sourceTree = "<group>"; };
@@ -383,6 +383,7 @@
 		7AD26ABD2703C5C500820637 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -403,6 +404,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.solarana.SLRMDMConfig;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos macosx iphonesimulator iphoneos appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Debug;
@@ -410,6 +413,7 @@
 		7AD26ABE2703C5C500820637 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -430,6 +434,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.solarana.SLRMDMConfig;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos macosx iphonesimulator iphoneos appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Release;
@@ -437,6 +443,7 @@
 		7AD26AC02703C5C500820637 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -449,6 +456,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.solarana.SLRMDMConfigTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "watchsimulator watchos macosx iphonesimulator iphoneos appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 			};
 			name = Debug;
@@ -456,6 +465,7 @@
 		7AD26AC12703C5C500820637 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -468,6 +478,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.solarana.SLRMDMConfigTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "watchsimulator watchos macosx iphonesimulator iphoneos appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 			};
 			name = Release;
