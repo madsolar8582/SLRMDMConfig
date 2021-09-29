@@ -1,0 +1,39 @@
+{
+  "configurations" : [
+    {
+      "id" : "39FF4962-5207-4182-BD27-5437DA646963",
+      "name" : "Threading and Undefined Behavior",
+      "options" : {
+        "threadSanitizerEnabled" : true,
+        "undefinedBehaviorSanitizerEnabled" : true
+      }
+    },
+    {
+      "id" : "8136A74D-A9E6-42B0-94C0-6E42D645593B",
+      "name" : "Memory Safety",
+      "options" : {
+        "addressSanitizer" : {
+          "detectStackUseAfterReturn" : true,
+          "enabled" : true
+        },
+        "mallocScribbleEnabled" : true
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testExecutionOrdering" : "random",
+    "testTimeoutsEnabled" : true,
+    "uiTestingScreenshotsLifetime" : "keepAlways",
+    "userAttachmentLifetime" : "keepAlways"
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:SLRMDMConfig.xcodeproj",
+        "identifier" : "7AD26AB12703C5C500820637",
+        "name" : "SLRMDMConfigTests"
+      }
+    }
+  ],
+  "version" : 1
+}
