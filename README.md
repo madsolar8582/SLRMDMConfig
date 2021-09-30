@@ -1,6 +1,6 @@
 # SLRMDMConfig
 
-[![Actions Status](https://github.com/madsolar8582/SLRDNSConfigurator/workflows/CI/badge.svg)](https://github.com/madsolar8582/SLRMDMConfig/actions)
+[![Actions Status](https://github.com/madsolar8582/SLRMDMConfig/workflows/CI/badge.svg)](https://github.com/madsolar8582/SLRMDMConfig/actions)
 [![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 ![Platforms: iOS | macOS | tvOS](https://img.shields.io/badge/platform-iOS%20%7C%20macOS%20%7C%20tvOS-lightgrey.svg)
 
@@ -44,7 +44,7 @@ This is the recommended installation method. Follow the [instructions provided b
 
 #### Binary Installation
 
-You may download the latest binary from the [releases page](https://github.com/madsolar8582/SLRDNSConfigurator/releases) and then include it in your project.
+You may download the latest binary from the [releases page](https://github.com/madsolar8582/SLRMDMConfig/releases) and then include it in your project.
 
 #### Source Installation
 
@@ -81,13 +81,13 @@ brew install cocoapods
 sudo gem install cocoapods # Note: sudo is required if you are installing to the system gemset
 ```
 
-Once CocoaPods is installed, add SLRDNSConfigurator to your `Podfile` or to your `Podspec` as a dependency:
+Once CocoaPods is installed, add SLRMDMConfig to your `Podfile` or to your `Podspec` as a dependency:
 ```yaml
 # Podfile
-pod 'SLRDNSConfigurator', git: 'https://github.com/madsolar8582/SLRMDMConfig.git', tag: '1.0.0'
+pod 'SLRMDMConfig', git: 'https://github.com/madsolar8582/SLRMDMConfig.git', tag: '1.0.0'
 
 # Podspec
-s.dependency 'SLRDNSConfigurator', git: 'https://github.com/madsolar8582/SLRMDMConfig.git', tag: '1.0.0'
+s.dependency 'SLRMDMConfig', git: 'https://github.com/madsolar8582/SLRMDMConfig.git', tag: '1.0.0'
 ```
 
 ### Usage
