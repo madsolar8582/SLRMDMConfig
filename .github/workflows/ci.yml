@@ -10,19 +10,19 @@ on:
       - '*'
 jobs:
   build:
-    runs-on: macOS-11
+    runs-on: macOS-12
     strategy:
       matrix:
         config:
-          - { scheme: 'SLRMDMConfig', destination: 'platform=iOS Simulator,OS=latest,name=iPhone 13', options: '' }
+          - { scheme: 'SLRMDMConfig', destination: 'platform=iOS Simulator,OS=latest,name=iPhone 14', options: '' }
           - { scheme: 'SLRMDMConfig', destination: 'platform=macOS,variant=Mac Catalyst', options: 'CODE_SIGN_IDENTITY=- CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO' }
           - { scheme: 'SLRMDMConfig', destination: 'platform=macOS', options: '' }
           - { scheme: 'SLRMDMConfig', destination: 'platform=tvOS Simulator,OS=latest,name=Apple TV 4K (2nd generation)', options: '' }
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Configure Xcode
       run: |
-        sudo xcode-select --switch /Applications/Xcode_13.0.app
+        sudo xcode-select --switch /Applications/Xcode_14.0.1.app
         xcrun xcodebuild -version
     - name: Build and Test
       run: env NSUnbufferedIO=YES xcodebuild clean test -project SLRMDMConfig.xcodeproj -scheme ${{ matrix.config['scheme'] }} -configuration Debug -destination '${{ matrix.config['destination'] }}' -testPlan ${{ matrix.config['scheme'] }} -parallel-testing-enabled YES ${{ matrix.config['options'] }}
